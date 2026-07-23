@@ -40,8 +40,8 @@ function Counter({ value }) {
 
 export default function About() {
   return (
-    <section id="about" className="px-6 sm:px-10 py-28 max-w-6xl mx-auto">
-      <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-14 items-center">
+    <section id="about" className="px-6 sm:px-10 pt-10 pb-20 lg:pt-16 lg:pb-24 max-w-6xl mx-auto" >
+      <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -50,7 +50,7 @@ export default function About() {
           className="relative mx-auto md:mx-0"
         >
           {/* 🖼️ Uses the same photo as Hero — swap src/assets/profile.jpg to change both */}
-          <div className="relative w-60 h-[26rem] sm:w-72 sm:h-[30rem]">
+          <div className="relative w-60 h-[24rem] sm:w-72 sm:h-[28rem]">
             <div className="absolute inset-0 border border-gold/40 rounded-2xl translate-x-4 translate-y-4" />
             <img
               src={profileImg}

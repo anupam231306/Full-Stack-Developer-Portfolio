@@ -47,12 +47,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center px-6 sm:px-10 pt-20 lg:pt-24 pb-10 lg:pb-16 overflow-hidden"
+     className="relative flex items-center justify-center px-6 sm:px-10 py-16 lg:py-16 overflow-hidden"
     >
       {/* ambient background glow — quiet, not the whole show */}
       <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-[140px]" />
 
-      <div className="max-w-6xl w-full mx-auto grid md:grid-cols-[1.2fr_0.8fr] gap-14 items-center relative z-10">
+      <div className="max-w-6xl w-full mx-auto grid lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-14 items-center relative z-10">
         {/* Text column */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -90,7 +90,7 @@ export default function Hero() {
            opportunities.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-7 flex flex-wrap items-center gap-4">
             {/* ✏️ EDIT ME: point this to your actual resume file in /public */}
             <a
               href="/myresume.pdf"
@@ -109,7 +109,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex items-center gap-5">
+          <div className="mt-7 flex items-center gap-5">
             {SOCIALS.map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
