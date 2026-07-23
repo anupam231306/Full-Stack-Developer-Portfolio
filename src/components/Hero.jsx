@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center px-6 sm:px-10 pt-24 pb-16 overflow-hidden"
+      className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center px-6 sm:px-10 pt-20 lg:pt-24 pb-10 lg:pb-16 overflow-hidden"
     >
       {/* ambient background glow — quiet, not the whole show */}
       <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-[140px]" />

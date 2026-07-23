@@ -55,7 +55,7 @@ export default function Navbar({ theme, toggleTheme }) {
           <button
             onClick={toggleTheme}
             aria-label="Toggle light/dark theme"
-            className="hidden sm:flex items-center justify-center w-9 h-9 rounded-full border border-line text-gold hover:border-gold transition-colors"
+            className="flex items-center justify-center w-9 h-9 rounded-full border border-line text-gold hover:border-gold transition-colors"
           >
             {theme === 'dark' ? <BsSunFill size={14} /> : <BsMoonStarsFill size={14} />}
           </button>
