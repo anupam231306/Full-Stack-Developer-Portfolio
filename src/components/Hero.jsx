@@ -47,12 +47,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-     className="relative flex items-start lg:items-center justify-center px-6 sm:px-10 pt-8 pb-8 lg:pt-16 lg:pb-12 overflow-hidden"
+     className="relative flex items-center justify-center px-6 sm:px-10 pt-20 pb-12 lg:pt-24 lg:pb-20 overflow-hidden"
     >
       {/* ambient background glow — quiet, not the whole show */}
       <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-[140px]" />
 
-      <div className="max-w-6xl w-full mx-auto grid lg:grid-cols-[1.2fr_0.8fr] gap-8 lg:gap-12 items-start lg:items-center relative z-10">
+      <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-14 items-center relative z-10">
         {/* Text column */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -130,7 +130,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.15 }}
-          className="relative flex justify-center md:justify-end"
+          className="relative flex justify-center lg:justify-end mt-10 lg:mt-0"
         >
           <div className="relative">
             <div className="absolute -inset-3 rounded-full border border-gold/30 animate-pulse" />

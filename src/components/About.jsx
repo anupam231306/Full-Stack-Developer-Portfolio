@@ -40,8 +40,8 @@ function Counter({ value }) {
 
 export default function About() {
   return (
-    <section id="about" className="px-6 sm:px-10 pt-6 pb-16 lg:pt-10 lg:pb-20 max-w-6xl mx-auto" >
-      <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center">
+    <section id="about" className="px-6 sm:px-10 py-16 lg:py-24 max-w-6xl mx-auto" >
+      <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-10 lg:gap-14 items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}

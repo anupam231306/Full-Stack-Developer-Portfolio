@@ -32,18 +32,18 @@ export default function Navbar({ theme, toggleTheme }) {
           : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 sm:px-10 h-20 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 h-20 flex items-center justify-between">
         {/* ✏️ EDIT ME: your name / logo mark */}
-        <a href="#home" className="font-display text-xl tracking-wide text-ivory">
+        <a href="#home" className="font-display text-lg lg:text-xl">
           A<span className="text-gold">.</span>Upadhyay
         </a>
 
-        <ul className="hidden md:flex items-center gap-10">
+        <ul className="hidden lg:flex items-center gap-8 xl:gap-10">
           {LINKS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-muted hover:text-gold transition-colors duration-200 tracking-wide"
+                className="text-sm font-medium text-muted hover:text-gold transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -55,13 +55,13 @@ export default function Navbar({ theme, toggleTheme }) {
           <button
             onClick={toggleTheme}
             aria-label="Toggle light/dark theme"
-            className="flex items-center justify-center w-9 h-9 rounded-full border border-line text-gold hover:border-gold transition-colors"
+            className="flex items-center justify-center w-10 h-10 rounded-full border border-line text-gold hover:border-gold transition-colors"
           >
             {theme === 'dark' ? <BsSunFill size={14} /> : <BsMoonStarsFill size={14} />}
           </button>
 
           <button
-            className="md:hidden text-ivory text-2xl"
+            className="lg:hidden text-ivory text-2xl"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -77,7 +77,7 @@ export default function Navbar({ theme, toggleTheme }) {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden overflow-hidden bg-base border-b border-line"
+            className="lg:hidden overflow-hidden bg-base/95 backdrop-blur-md border-b border-line"
           >
             <ul className="flex flex-col px-6 py-4 gap-4">
               {LINKS.map((link) => (
