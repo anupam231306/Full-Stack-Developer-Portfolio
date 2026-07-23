@@ -40,7 +40,7 @@ function Counter({ value }) {
 
 export default function About() {
   return (
-    <section id="about" className="px-6 sm:px-10 pt-10 pb-20 lg:pt-16 lg:pb-24 max-w-6xl mx-auto" >
+    <section id="about" className="px-6 sm:px-10 pt-6 pb-16 lg:pt-10 lg:pb-20 max-w-6xl mx-auto" >
       <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
